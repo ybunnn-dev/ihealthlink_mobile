@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ihealthlink_mobile/themes/colors.dart';
+import '/widgets/login-form.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
@@ -78,9 +79,8 @@ class AuthPage extends StatelessWidget {
                   topRight: Radius.circular(25),
                 ),
               ),
-              child: const Center(
-                child: Text('Content goes here'),
-              ),
+              // Replace the placeholder Center widget with your LoginForm
+              child: const LoginForm(),
             ),
           ),
         ],
